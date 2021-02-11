@@ -1,0 +1,67 @@
+.networks {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+
+  &__content {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: $title-font-weight;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}
+
+.networks-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+
+.networks-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  color: $primary-white-color;
+  background-color: $network-bg-color;
+  @include transit(background-color);
+
+  outline: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

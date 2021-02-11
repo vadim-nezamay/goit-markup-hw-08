@@ -1,0 +1,47 @@
+.page-footer {
+  @extend %section;
+  background-color: $footer-bg-color;
+}
+
+.address-footer {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  &__address {
+    margin-bottom: 8px;
+    color: $primary-white-color;
+    font-weight: $primary-font-weight;
+    font-style: normal;
+    text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.contact-footer {
+  &__list {
+    @extend %list;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__link {
+    color: $text-footer;
+    text-decoration: none;
+
+    font-weight: $primary-font-weight;
+  }
+}

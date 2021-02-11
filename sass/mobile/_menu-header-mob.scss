@@ -1,0 +1,125 @@
+.main-nav__menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $primary-white-color;
+    padding: 48px 40px 48px 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    // overflow-y: scroll;
+
+    // min-width: 320px;
+    width: 100%;
+    // opacity: 0;
+    // visibility: hidden;
+
+    // @include transit(opacity);
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-navigation__list,
+.menu-contacts__list,
+.networks-menu__list {
+  @extend %list;
+  margin-top: 0;
+}
+
+.menu-navigation__list {
+  margin-bottom: 302px;
+
+  @media screen and (max-width: 360px) {
+    margin-bottom: 185px;
+  }
+}
+
+.menu-contacts__list {
+  margin-bottom: 64px;
+}
+
+.menu-navigation__item:not(:last-child),
+.menu-contacts__item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.menu-navigation__link,
+.menu-contacts__link,
+.networks-menu__link {
+  display: block;
+  text-decoration: none;
+  font-weight: $secondary-font-weight;
+  letter-spacing: 0.02em;
+}
+
+.menu-navigation__link {
+  font-size: $menu-font-size-mob;
+  color: $title-text-color;
+  line-height: 1.18;
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--current {
+    color: $accent-color;
+  }
+}
+
+.menu-contacts__link {
+  line-height: 1.18;
+
+  &--tel {
+    font-size: $tel-font-size-mob;
+    color: $accent-color;
+
+    @media screen and (max-width: 479px) {
+      font-size: calc((100vw - 320px) / (480 - 320) * (34 - 26) + 26px);
+    }
+  }
+
+  &--mail {
+    font-size: $mail-font-size-mob;
+    color: $primary-text-color;
+    @include transit(color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    @media screen and (max-width: 479px) {
+      font-size: calc((100vw - 320px) / (480 - 320) * (24 - 20) + 20px);
+    }
+  }
+}
+
+.networks-menu__link {
+  color: $accent-color;
+  font-size: $title-project-font-size;
+  line-height: 1.22;
+
+  @media screen and (max-width: 479px) {
+    font-size: calc((100vw - 320px) / (480 - 320) * (18 - 12) + 12px);
+  }
+}
+
+.networks-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.networks-menu__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 5px;
+  padding-right: 5px;
+}

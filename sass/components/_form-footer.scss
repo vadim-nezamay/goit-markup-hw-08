@@ -1,0 +1,84 @@
+.subscribe {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
+  &__content {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: $title-font-weight;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}
+
+.tablet-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.subscribe-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    padding: 16px;
+    width: 100%;
+    max-width: 450px;
+    color: $primary-white-color;
+    font-size: $button-team-project-font-size;
+    font-weight: $primary-font-weight;
+    background-color: $footer-bg-color;
+    @include bordered(rgba(255, 255, 255, 0.3));
+    border-radius: $border-radius-button;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+
+    &__input::placeholder {
+      color: $text-footer;
+      font-size: $button-team-project-font-size;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .button-subscribe {
+    @extend %button;
+    display: flex;
+    align-items: center;
+    padding-right: 28px;
+    padding-left: 28px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .button__icon {
+    fill: $primary-white-color;
+    margin-left: 10px;
+  }
+}

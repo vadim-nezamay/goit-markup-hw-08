@@ -1,0 +1,39 @@
+.main-nav__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  padding: 0;
+  border: none;
+  background-color: $primary-white-color;
+  color: $black-color;
+
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__icon {
+  fill: currentColor;
+  // z-index: 1;
+}
+
+.main-nav__button .icon-close {
+  display: none;
+}
+
+.main-nav__button.is-open .icon-close {
+  display: block;
+}
+
+.main-nav__button.is-open .icon-menu {
+  display: none;
+}

@@ -1,0 +1,18 @@
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

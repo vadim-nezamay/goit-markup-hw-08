@@ -1,0 +1,42 @@
+.logo {
+  text-decoration: none;
+  color: $accent-color;
+  font-family: $secondary-font;
+  font-weight: $title-font-weight;
+  font-size: $mail-font-size-mob;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: $logo-font-size;
+    line-height: 1.19;
+  }
+
+  &__header {
+    color: $black-color;
+  }
+
+  &__footer {
+    color: $primary-white-color;
+  }
+
+  &--header {
+    padding: 16px 0;
+
+    @media screen and (min-width: 768px) {
+      padding: 26px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 24px 0;
+    }
+  }
+
+  &--footer {
+    display: block;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+}

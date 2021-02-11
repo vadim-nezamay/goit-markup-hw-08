@@ -1,0 +1,70 @@
+%list {
+  // display: flex;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  font-style: normal;
+}
+
+%section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+%button {
+  display: inline-block;
+  padding: 10px 32px;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  font-family: inherit;
+  font-weight: $title-font-weight;
+  font-size: $button-team-project-font-size;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  border-radius: $border-radius-button;
+  box-shadow: $button-shadow;
+
+  border: none;
+  cursor: pointer;
+}
+
+// %image {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
+
+%title-main {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $primary-white-color;
+  font-weight: $hero-title-font-weight;
+  font-size: $logo-font-size;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: $hero-font-size;
+    line-height: 1.36;
+  }
+}
+
+%title-section {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $title-text-color;
+  font-weight: $title-font-weight;
+  font-size: $title-font-size-mob;
+  line-height: 1.17;
+  text-align: center;
+}
