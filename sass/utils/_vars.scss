@@ -1,0 +1,25 @@
+:root {
+    /* Головна палітра кольорів */
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --white-text-color: #ffffff;
+    --social-primary-color: #afb1b8;
+    --footer-mail-color: rgba(255, 255, 255, 0.6);
+    --modal-border-color: rgba(33, 33, 33, 0.2);
+    /* CSS-змінні фонові кольори */
+    --secondary-bg-color: #f5f4fa;
+    --footer-bg-color: #2f303a;
+    --accent-bg-color: #2196f3;
+    --white-bg-color: #ffffff;
+    --social-bg-color: rgba(255, 255, 255, 0.1);
+    /* FLEX-змінні */
+    --project-list-gap: 30px;
+    --section-padding-gap: 94px;
+    /* Тіні карток та кнопок */
+    --shadow-portfolio: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --shadow-studio: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    /* OTHER */
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}

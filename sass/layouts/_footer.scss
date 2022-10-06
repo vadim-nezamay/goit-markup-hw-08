@@ -1,0 +1,168 @@
+/**
+  |============================
+  | Підвал сторінки
+  |============================
+*/
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--footer-bg-color);
+}
+
+.footer .logo__web {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+footer .logo__studio {
+    color: #ffffff;
+}
+
+.footer .address {
+    color: var(--white-text-color);
+}
+
+.footer__address a {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    transition: color 250ms var(--cubic-bezier);
+}
+
+.footer__address a:hover,
+.footer__address a:focus {
+    color: var(--accent-color);
+}
+
+.footer .address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+/* FOOTER SOCIAL */
+
+.footer__flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.social {
+    margin-left: 70px;
+}
+
+.footer .social__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16px / 14px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+}
+
+.social__list {
+    gap: 10px;
+}
+
+.social .social__list {
+    display: flex;
+}
+
+.social .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Add icons socials */
+
+.footer .social__icons {
+    fill: var(--white-text-color);
+}
+
+.social .link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: var(--social-bg-color);
+
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--cubic-bezier), transform 250ms var(--cubic-bezier);
+}
+
+.social .link:hover,
+.social .link:focus {
+    background-color: var(--accent-bg-color);
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+/* Footer SUBSCRIPTION */
+
+.subscription {
+    margin-left: 93px;
+}
+
+.footer input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    /* padding: 15px 16px; */
+
+    color: var(--footer-mail-color);
+}
+
+.footer .email {
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--footer-mail-color);
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    background-color: transparent;
+}
+
+.footer .button {
+    min-width: 200px;
+    min-height: 50px;
+
+    color: var(--white-text-color);
+    background-color: var(--accent-bg-color);
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+
+    padding: 10px 28px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    border: none;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+}
+
+.footer .button>.send {
+    fill: currentColor;
+    margin-left: 10px;
+}

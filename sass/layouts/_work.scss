@@ -1,0 +1,139 @@
+.work__section h2,
+.section__team h2,
+.section__clients h2 {
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.work__section {
+    /* padding-top: var(--section-padding-gap); */
+    padding-bottom: var(--section-padding-gap);
+}
+
+.work__thumb {
+    position: relative;
+
+    width: 370px;
+}
+
+.work__thumb p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    min-height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background-color: rgba(47, 48, 58, 0.8);
+
+    color: var(--white-text-color);
+}
+
+.section__team {
+    padding-top: var(--section-padding-gap);
+    padding-bottom: var(--section-padding-gap);
+
+    background-color: var(--secondary-bg-color);
+}
+
+.team__name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section__team h3 {
+    color: var(--title-text-color);
+
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.section__team p {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team__list .social__team {
+    box-shadow: var(--shadow-studio);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-bg-color);
+}
+
+/* Абсолютне позиціонування img work  */
+
+/* TEAM SOCIAL */
+
+.section__team .social__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section__team .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    color: var(--social-primary-color);
+    fill: currentColor;
+
+    transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier),
+        transform 250ms var(--cubic-bezier);
+}
+
+.section__team .social__link:hover,
+.section__team .social__link:focus {
+    background-color: var(--accent-bg-color);
+    fill: var(--white-text-color);
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+/* FLEX Чим займаємося та команда */
+.work__list {
+    display: flex;
+    gap: 30px;
+}
+
+.section__work .work__list,
+.section__team .team__list {
+    display: flex;
+}
+
+.work__list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team__list .social__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social__item {
+    border-radius: 0px 0px 4px 4px;
+}

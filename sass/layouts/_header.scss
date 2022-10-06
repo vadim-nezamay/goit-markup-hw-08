@@ -1,0 +1,44 @@
+.header .logo__web {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    display: inline-block;
+}
+
+.logo__studio {
+    color: #000000;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+
+    background-color: var(--white-bg-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+.contacts__item {
+    display: block;
+    justify-content: center;
+}
+.header__flex{
+    display: flex;
+}
+
+.header .contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.header .contacts__list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header .mail,
+.header .tel {
+    display: flex;
+    align-items: center;
+}

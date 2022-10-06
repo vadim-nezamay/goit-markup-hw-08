@@ -1,0 +1,53 @@
+.nav a.current {
+    color: var(--accent-color);
+}
+
+.nav a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+
+    transition: color 250ms var(--cubic-bezier);
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: var(--accent-color);
+}
+
+.nav {
+    margin-left: 93px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list .nav__item {
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/**
+  |============================
+*/
+.nav__list .nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav a.nav__current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--accent-bg-color);
+}

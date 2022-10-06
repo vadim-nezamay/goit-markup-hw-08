@@ -1,0 +1,19 @@
+.contacts a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+
+    transition: color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.contacts__envelope,
+.contacts__smartphone {
+    margin-right: 10px;
+}

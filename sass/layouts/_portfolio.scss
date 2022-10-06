@@ -1,0 +1,161 @@
+/**
+  |============================
+  | Main content of a page Portfolio
+  |============================
+*/
+
+.filters__list .filters__button {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    min-height: 38px;
+    border: none;
+
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: inherit;
+
+    transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier),
+        box-shadow 250ms var(--cubic-bezier);
+}
+
+.filters__list .filters__button:hover,
+.filters__list .filters__button:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-bg-color);
+    box-shadow: var(--shadow-portfolio);
+}
+
+.section__projects {
+    padding-top: var(--section-padding-gap);
+    padding-bottom: var(--section-padding-gap);
+}
+
+.section__projects .filters__list {
+    margin-bottom: 50px;
+}
+
+.project__list>.project__item {
+    width: 370px;
+}
+
+.section__projects h2 {
+    width: 322px;
+    min-height: 36px;
+
+    color: var(--title-text-color);
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.section__projects p {
+    width: 322px;
+    min-height: 30px;
+
+    margin-top: 4px;
+
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.project__name {
+    padding: 20px 24px;
+
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+/* FLEX FILTERS */
+
+.filters__list {
+    display: flex;
+    justify-content: center;
+}
+
+.filters__list {
+    gap: 8px;
+}
+
+/* FLEX PROJECTS */
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--project-list-gap);
+}
+
+/* Оверлей карточок Проєктів */
+
+.project__thumb {
+    position: relative;
+
+    width: 370px;
+    height: 294px;
+
+    overflow: hidden;
+}
+
+.project__thumb .project__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+
+    color: var(--white-text-color);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translatey(100%);
+    transition: transform 250ms var(--cubic-bezier);
+}
+
+.project__list .project__link {
+    display: block;
+    transition: box-shadow 250ms var(--cubic-bezier);
+}
+
+.project__list .project__link:hover,
+.project__list .project__link:focus {
+    box-shadow: var(--shadow-portfolio);
+}
+
+.project__list .project__link:hover .project__overlay,
+.project__list .project__link:focus .project__overlay {
+    transform: translatey(0);
+}
+
+/* Приховування заголовків */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
