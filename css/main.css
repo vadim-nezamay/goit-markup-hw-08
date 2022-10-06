@@ -35,11 +35,26 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 :root {
   /* Головна палітра кольорів */
   --primary-text-color: #757575;
@@ -224,9 +239,48 @@ img {
 }
 
 .section__features {
-  margin-top: 0;
   padding-top: var(--section-padding-gap);
   padding-bottom: var(--section-padding-gap);
+}
+@media screen and (max-width: 1199px) {
+  .section__features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.feature__list .feature__item {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.feature__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
 }
 
 .section__features .feature__subtitle {
@@ -244,35 +298,9 @@ img {
   line-height: 1.71;
 }
 
-.feature__box {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--secondary-bg-color);
-}
-
 /* FLEX Особливості */
-.feature__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .feature__list .item {
   width: calc((100% - 90px) / 4);
-}
-
-.feature__list .feature__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .hero {

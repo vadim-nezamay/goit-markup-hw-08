@@ -1,7 +1,42 @@
 .section__features {
-    margin-top: 0;
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     padding-top: var(--section-padding-gap);
     padding-bottom: var(--section-padding-gap);
+}
+
+.feature__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+
+    .feature__item{
+        width: 100%;
+    }
+}
+ @media screen and (max-width: 767px){
+    .feature__item:not(:last-child) {
+           margin-bottom: 30px;
+        }
+}
+
+.feature__box {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--secondary-bg-color);
 }
 
 .section__features .feature__subtitle {
@@ -22,28 +57,12 @@
     line-height: 1.71;
 }
 
-.feature__box {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-
-    background-color: var(--secondary-bg-color);
-}
 
 /* FLEX Особливості */
 
-.feature__list {
-    display: flex;
-}
+
 
 .feature__list .item {
     width: calc((100% - 90px) / 4);
 }
 
-.feature__list .feature__item:not(:last-child) {
-    margin-right: 30px;
-}
