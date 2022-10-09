@@ -34,6 +34,17 @@ img {
   height: auto;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -256,11 +267,11 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
   }
 }
-.feature__list .feature__item {
-  width: 100%;
+
+.feature__item {
+  width: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -299,10 +310,6 @@ img {
 }
 
 /* FLEX Особливості */
-.feature__list .item {
-  width: calc((100% - 90px) / 4);
-}
-
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;

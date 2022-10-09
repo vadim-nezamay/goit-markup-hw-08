@@ -7,19 +7,21 @@
     padding-top: var(--section-padding-gap);
     padding-bottom: var(--section-padding-gap);
 }
-
 .feature__list {
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
 
     }
+
+    
+}
+
 
     .feature__item{
-        width: 100%;
+        width: 50%;
     }
-}
+
  @media screen and (max-width: 767px){
     .feature__item:not(:last-child) {
            margin-bottom: 30px;
@@ -62,7 +64,5 @@
 
 
 
-.feature__list .item {
-    width: calc((100% - 90px) / 4);
-}
-
+// .feature__list .item {
+//     width: calc((100% - 90px) / 4); }
